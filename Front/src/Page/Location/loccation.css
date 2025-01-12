@@ -1,0 +1,20 @@
+/* Cursor Follow Effect */
+.cursor-follower {
+  position: absolute;
+  pointer-events: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ffdd00;
+  transform: translate(-50%, -50%);
+  animation: cursor-follow 0.1s ease-out;
+}
+
+@keyframes cursor-follow {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
